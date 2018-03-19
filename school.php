@@ -134,7 +134,7 @@
 			}
 			</style>
 			<button class="button back_btn goback finished" data-color="green" data-style="slide-down" onclick="/*setTimeout(function(){location.href='student.php'},1000);"></button>
-			<h1 class="bubble">教学进度</h1>
+			<h1 class="bubble">教学数据大屏</h1>
 			<div class="clearfix"></div>
 			<!--row-two-->
 			<div class="main-row row2">
