@@ -4,7 +4,7 @@
 <title>登陆 - 校园成绩</title>
 <?php include "header.php"; ?>
 </head>
-<body class="pink-yellow">
+<body class="dark-purple">
 	<!-- content -->
 	<div class="main">
 		<div class="container">

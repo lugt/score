@@ -55,6 +55,12 @@ body{
 	background-attachment:fixed;
 }
 
+.dark-purple{
+	background: radial-gradient(#801b35,#390d1c);
+	/*background: linear-gradient(50deg, #390d1c,#fcb659);*/
+	background-attachment:fixed;
+}
+
 .blue-grad{
 	background-size:100% 100%;
 	-moz-background-size:100% 100%; /* 老版本的 Firefox */
@@ -2349,4 +2355,28 @@ ul.report li a {
 
 .grid-tansparent {
 	border-radius: 2em;
+}
+
+.start-big {
+	font-size:3em;
+	color:#53E8A5;
+	margin-right:0.2em;
+}
+
+.center-bar {
+	padding:2em 3em 1em 3em;align-content: center;text-align: center;
+	width:100%;
+}
+
+.mask-shadow {
+	-webkit-mask-image: -webkit-linear-gradient(20deg, #fff, #fff);
+}
+
+.top-bottom-2 {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+.progress-bar-tobedone {
+	background: #a0a2a1;
 }

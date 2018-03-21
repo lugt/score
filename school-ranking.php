@@ -4,26 +4,26 @@
 <title>校园 - 单科成绩</title>
 <?php include "header.php"; ?>
 </head>
-<body class="pink-yellow">
+<body class="dark-purple">
 	<!-- content -->
 	<div class="main">
 		<div class="container">
 			<div class="main-row row3">
 				<div class="col-md-2 grid-one">
-					<div class="data-bars grid-tansparent">
-						<img src="images/img1.jpg" alt="" class="left_upper_photo" style="border-radius: 50%;"/>
+					<div class="data-bars grid-tansparent" style="padding:2em 3em 1em 3em;align-content: center;text-align: center;">
+						<img src="images/avatar1.png" alt="" class="left_upper_photo" style="border-radius: 50%;box-shadow: 2px 2px 40px #cb1f45; border: solid #fff 2px;"/>
 					</div>
 				</div>
 				<div class="col-md-4 content-grids">
 					<div class="data-bars grid-tansparent">
 						<div class="grid-transparent-row row">
-							<div class="bar_group">
-								<span class="glyphicon glyphicon-star start-big" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-star start-big" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-star start-big" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-star start-big" aria-hidden="true"></span>
+							<div class="bar_group center-bar mask-shadow">
+								<span class="glyphicon glyphicon-star start-big" aria-hidden="true" style="color:#fe2a04"></span>
+								<span class="glyphicon glyphicon-star start-big" aria-hidden="true" style="color:#ff6110"></span>
+								<span class="glyphicon glyphicon-star start-big" aria-hidden="true" style="color:#ffce34"></span>
+								<span class="glyphicon glyphicon-star start-big" aria-hidden="true" style="color:#ffe759"></span>
 							</div>
-							<div class="btn-group" role="group" aria-label="...">
+							<div class="btn-group center-bar" role="group" aria-label="..." >
 							  	<button type="button" class="btn btn-default">1</button>
 							  	<button type="button" class="btn btn-default">2</button>
 
@@ -42,76 +42,67 @@
 					</div>
 				</div>
 				<div class="col-md-2 charts-right">
-					<div class="charts-info grid-tansparent">
-						<div id="container-right" class="margin grid-info" role="group"></div>
+					<div class="charts-info grid-tansparent" style="">
+						<div id="container-right" class="margin" role="group"></div>
 					</div>
 					<script>
 						$(window).load(function() {
-						  doughnutWidget.options = {
-							container: $('#container-right'),
-							width: 100,
-							height: 100,
-							class: 'myClass',
-							cutout: 60
-						  };
-						  doughnutWidget.render(data2());
-						});
-
-						function data2() {
-							var data = {
-							total: {
-							  val: 2,
-							  color: '#57B4F2',
-							  click: function(e) {
-								console.log('hi');
-							  }
-							}
-						  };
-						  return data;
+						 	//HighCharts.
 						}
 					</script>
 				</div>
 				<div class="col-md-2 charts-right">
 					<div class="charts-info grid">
-						<div id="container" class="margin grid-info" role="group"></div>
+						<div id="info-part" class="margin grid-info" role="group"></div>
 					</div>
 				</div>
 				<div class="clearfix"></div>
 			</div>
-			<div class="alert alert-success" role="alert">Well Done !</div>
-			<div class="progress">
-			  <div class="progress-bar progress-bar-success" style="width: 35%">
-				<span class="sr-only">35% Complete (success)</span>
-			  </div>
-			  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
-				<span class="sr-only">20% Complete (warning)</span>
-			  </div>
-			  <div class="progress-bar progress-bar-danger" style="width: 10%">
-				<span class="sr-only">10% Complete (danger)</span>
-			  </div>
-			</div>
+			<div class="alert alert-success" role="alert" style="margin: 2em 0 4em 0;"> 很不错， 当前教学进度与 <b>学区教学计划</b> 同步进行 !</div>
 			<div class="main-row">
 				<!--news feed-->
 				<div class="col-md-6 content-grids">
-					<div class="progress">
-					  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-						<span class="sr-only">40% Complete (success)</span>
-					  </div>
-					</div>
-					<div class="progress">
-					  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-						<span class="sr-only">20% Complete</span>
-					  </div>
-					</div>
-					<div class="progress">
-					  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-						<span class="sr-only">60% Complete (warning)</span>
-					  </div>
+					<div class="grid menu-info" style="padding:3em;">
+						考评进度：<br>
+						<div class="progress top-bottom-2">
+						  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							<span class="sr-only">20% Complete</span>
+						  </div>
+						</div>
+						学生接受度：<br>
+						<div class="progress top-bottom-2">
+						  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							<span class="sr-only">20% Complete</span>
+						  </div>
+						  <div class="progress-bar progress-bar-tobedone" style="width: 60%">
+							<span class="sr-only">10% Complete (danger)</span>
+						  </div>
+						</div>
+						教学进度：<br>
+						<div class="progress top-bottom-2">
+						  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							<span class="sr-only">60% Complete (warning)</span>
+						  </div>
+					      <div class="progress-bar progress-bar-tobedone" style="width: 70%">
+							<span class="sr-only">10% Complete (danger)</span>
+						  </div>
+						</div>
+						教学进度：<br>
+						<div class="progress top-bottom-2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+						  <div class="progress-bar progress-bar-success" style="width: 35%">
+							<span class="sr-only">35% Complete (success)</span>
+						  </div>
+						  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+							<span class="sr-only">20% Complete (warning)</span>
+						  </div>
+						  <div class="progress-bar progress-bar-danger" style="width: 10%">
+							<span class="sr-only">10% Complete (danger)</span>
+						  </div>
+						</div>
 					</div>
 				</div>
 				<!--menu-list-->
 				<div class="col-md-3 content-grids">
-					<h3 class="title">LIST MENU</h3>
 					<div class="grid menu-info">
 						<div class="panel-group" id="accordion" aria-multiselectable="true">
 							<div class="panel panel-default">
@@ -135,50 +126,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingFour">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-										<h4>Date List new order</h4> <h6>Lorem ipsum</h6> <span class="glyphicon glyphicon-menu-down"></span>
-									</a>
-								</div>
-								<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-									<div class="panel-body">
-										<p> Laoreet dolore tincidunt ut </p>
-										<p> Consectetuer adipiscing elit</p>
-										<p> Deleniti atque voluptatum </p>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingFive">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMive" aria-expanded="false" aria-controls="collapseFive">
-										<h4>List of friend requests</h4> <h6>Priority Today</h6> <span class="glyphicon glyphicon-menu-down"></span>
-									</a>
-								</div>
-								<div id="collapseMive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
-									<div class="panel-body">
-										<div class="request-left">
-											<img src="images/img4.jpg" alt=""/>
-										</div>
-										<div class="request-right">
-											<h5>Hernandez </h5>
-											<h6>Web designer</h6>
-											<ul>
-												<li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> 360</a></li> 
-												<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> 112</a></li>
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 				<!--//menu-list-->
 				<!--menu-list-->
 				<div class="col-md-3 content-grids">
-					<h3 class="title">LIST MENU</h3>
 					<div class="grid menu-info">
 						<div class="panel-group" id="accordion" aria-multiselectable="true">
 							<div class="panel panel-default">
@@ -208,48 +161,11 @@
 									</div>
 								</div>
 							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingFour">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-										<h4>Date List new order</h4> <h6>Lorem ipsum</h6> <span class="glyphicon glyphicon-menu-down"></span>
-									</a>
-								</div>
-								<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-									<div class="panel-body">
-										<p> Laoreet dolore tincidunt ut </p>
-										<p> Consectetuer adipiscing elit</p>
-										<p> Deleniti atque voluptatum </p>
-									</div>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="headingFive">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-										<h4>List of friend requests</h4> <h6>Priority Today</h6> <span class="glyphicon glyphicon-menu-down"></span>
-									</a>
-								</div>
-								<div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
-									<div class="panel-body">
-										<div class="request-left">
-											<img src="images/img4.jpg" alt=""/>
-										</div>
-										<div class="request-right">
-											<h5>Hernandez </h5>
-											<h6>Web designer</h6>
-											<ul>
-												<li><a href="#"><span class="glyphicon glyphicon-heart-empty"></span> 360</a></li> 
-												<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> 112</a></li>
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 				<!--//menu-list-->
-				<div class="col-md-8 gallery-slider">
+				<div class="col-md-8 gallery-slider" style="display:none;">
 					<section class="slider grid">
 						<div class="flexslider">
 							<ul class="slides">
