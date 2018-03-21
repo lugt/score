@@ -17,24 +17,24 @@
 				<div class="col-md-4 content-grids">
 					<div class="data-bars grid-tansparent">
 						<div class="grid-transparent-row row">
-							<div class="bar_group center-bar mask-shadow">
+							<div class="bar_group center-bar mask-shadow pink-shadow" style="-webkit-text-stroke: 3px  #fff;">
 								<span class="glyphicon glyphicon-star start-big" aria-hidden="true" style="color:#fe2a04"></span>
 								<span class="glyphicon glyphicon-star start-big" aria-hidden="true" style="color:#ff6110"></span>
 								<span class="glyphicon glyphicon-star start-big" aria-hidden="true" style="color:#ffce34"></span>
 								<span class="glyphicon glyphicon-star start-big" aria-hidden="true" style="color:#ffe759"></span>
 							</div>
-							<div class="btn-group center-bar" role="group" aria-label="..." >
-							  	<button type="button" class="btn btn-default">1</button>
-							  	<button type="button" class="btn btn-default">2</button>
+							<div class="btn-group center-bar" role="group" aria-label ="..." >
+							  	<button type="button" class="btn btn-default btn-pink-shadow" style="float:none;">教师学科反馈</button>
+							  	<button type="button" class="btn btn-default btn-pink-shadow" style="float:none;"s>近况</button>
 
-							  	<div class="btn-group" role="group">
+							  	<div class="btn-group btn-pink-shadow" role="group" style="float:none;">
 								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								  Dropdown
+								  考核
 								  <span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
-								  <li><a href="#">Dropdown link</a></li>
-								  <li><a href="#">Dropdown link</a></li>
+								  <li><a href="#">教学进度</a></li>
+								  <li><a href="#">考核指标进度</a></li>
 								</ul>
 							  </div>
 							</div>
@@ -46,14 +46,98 @@
 						<div id="container-right" class="margin" role="group"></div>
 					</div>
 					<script>
-						$(window).load(function() {
-						 	//HighCharts.
-						}
+						(function (){
+							var chart = null;
+							$(function () {
+								$('#container-right').highcharts({
+									chart: {
+										backgroundColor:0,
+										plotBackgroundColor: null,
+										plotBorderWidth: null,
+										plotShadow: false,
+										spacing : [0, 0 , 0, 0],
+										height:'140px',
+									},
+									title: {
+										useHTML:true,
+										floating:false,
+										text: '',
+										verticalAlign:'middle'
+									},
+									tooltip: {
+										pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+									},
+									plotOptions: {
+										pie: {
+											allowPointSelect: true,
+											cursor: 'pointer',
+											dataLabels: {
+												enabled: false,
+												format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+												style: {
+													color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+												}
+											},
+											point: {
+												events: {
+													mouseOver: function(e) {  // 鼠标滑过时动态更新标题
+														// 标题更新函数，API 地址：https://api.hcharts.cn/highcharts#Chart.setTitle
+														chart.setTitle({
+															text: e.target.name+ '\t'+ e.target.y + ' %'
+														});
+													}
+													//, 
+													// click: function(e) { // 同样的可以在点击事件里处理
+													//     chart.setTitle({
+													//         text: e.point.name+ '\t'+ e.point.y + ' %'
+													//     });
+													// }
+												}
+											},
+										}
+									},
+									exporting:{
+										enabled :false
+									},
+									series: [{
+										type: 'pie',
+										innerSize: '80%',
+										name: '市场份额',
+										data: [
+											{name:'Firefox',   y: 45.0, url : 'http://bbs.hcharts.cn'},
+											['IE',       26.8],
+											{
+												name: 'Chrome',
+												y: 12.8,
+												sliced: true,
+												selected: true,
+												url: 'http://www.hcharts.cn'
+											},
+											['Safari',    8.5],
+											['Opera',     6.2],
+											['其他',   0.7]
+										]
+									}]
+								}, function(c) {
+									// 环形图圆心
+									var centerY = c.series[0].center[1],
+										titleHeight = parseInt(c.title.styles.fontSize);
+									c.setTitle({
+										y:centerY + titleHeight/2
+									});
+									chart = c;
+								});
+							});
+
+						})();
 					</script>
 				</div>
-				<div class="col-md-2 charts-right">
+				<div class="col-md-4 charts-right">
 					<div class="charts-info grid">
-						<div id="info-part" class="margin grid-info" role="group"></div>
+						<div id="info-part" class="margin grid-info" role="group" style="padding:1em 2em 1em 2em;font-size: 1.1em;">
+						<div class="row top-bottom-3"><em class="glyphicon glyphicon-ok-circle font-big right-space"></em> 第二章：元素化合物</div>
+						<div class="row top-bottom-3"><i class="glyphicon glyphicon-retweet font-big right-space"></i> 需要加强：铁的相关反应</div>
+						</div>
 					</div>
 				</div>
 				<div class="clearfix"></div>

@@ -57,8 +57,6 @@ $(document).ready(function () {
 <!--//ResponsiveTabs-->
 <!--skycons-icons-->
 <script src="js/skycons.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
 <!--web-fonts-->
 <!--<link href='http://fonts.googleapis.com/css?family=Philosopher:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->

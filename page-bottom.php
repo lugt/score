@@ -5,3 +5,5 @@
 <link href="css/calendar.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/ladda.min.css">
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>

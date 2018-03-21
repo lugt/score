@@ -2380,3 +2380,24 @@ ul.report li a {
 .progress-bar-tobedone {
 	background: #a0a2a1;
 }
+
+.pink-shadow {
+	text-shadow: 1px 5px 1.8em #cb5f5c;
+}
+
+.btn-pink-shadow {
+	box-shadow: 2px 2px 2em #fff;
+}
+
+.font-big {
+	font-size: 1.5em;
+	vertical-align:middle;
+}
+
+.top-bottom-3 {
+	padding:1em 0 1em 0;
+}
+
+.right-space {
+	margin-right: 1em;
+}
