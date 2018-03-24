@@ -43,18 +43,6 @@ if($my_conf == NULL || $my_conf == -1 || !is_string($my_conf)){
 <script src="js/modernizr.custom.63321.js"></script> 
 <script src="js/pretty-doughtnut.js"></script>
 <script src="js/Chart.min.js"></script>
-<!--ResponsiveTabs-->
-<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-	$('#horizontalTab').easyResponsiveTabs({
-		type: 'default', //Types: default, vertical, accordion           
-		width: 'auto', //auto or any width like 600px
-		fit: true   // 100% fit in a container
-	});
-});
-</script>
-<!--//ResponsiveTabs-->
 <!--skycons-icons-->
 <script src="js/skycons.js"></script>
 <!--web-fonts-->

@@ -58,4 +58,3 @@
 			<div class="footer">
 				<p>© <?php echo date("Y-m-d");?> 超越 UI | 点线面科技</a></p>
 			</div>
-			<script src="https://code.highcharts.com/highcharts-more.js"></script>
