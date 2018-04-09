@@ -444,7 +444,7 @@
 				<button id="addData">Add Data</button>
 				<button id="removeData">Remove Data</button>
 				<script src="js/chart-util.js"></script>
-				<script src="js/Chart.min.js"></script>
+				<script src="js/Chart.bundle.min.js"></script>
 				<script>
 					var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 					var config = {
