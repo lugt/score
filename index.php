@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
 <title>登陆 - 校园成绩</title>
 <?php include "header.php"; ?>
 	<!--ResponsiveTabs-->
@@ -31,40 +30,6 @@ $(document).ready(function () {
 	})
 });
 </script>
-<!--//ResponsiveTabs-->
-=======
-    <title>登陆 - 校园成绩</title>
-    <?php include "header.php"; ?>
-    <!--ResponsiveTabs-->
-    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#horizontalTabMain').easyResponsiveTabs({
-                type: 'default', //Types: default, vertical, accordion
-                width: 'auto', //auto or any width like 600px
-                fit: true   // 100% fit in a container
-            });
-
-            $('#horizontalTab').easyResponsiveTabs({
-                type: 'default', //Types: default, vertical, accordion
-                width: 'auto', //auto or any width like 600px
-                fit: true   // 100% fit in a container
-            });
-            $('#horizontalTab2').easyResponsiveTabs({
-                type: 'default', //Types: default, vertical, accordion
-                width: 'auto', //auto or any width like 600px
-                fit: true   // 100% fit in a container
-            });
-            $('#horizontalTab3').easyResponsiveTabs({
-                type: 'default', //Types: default, vertical, accordion
-                width: 'auto', //auto or any width like 600px
-                fit: true   // 100% fit in a container
-            });
-
-        });
-    </script>
-    <!--//ResponsiveTabs-->
->>>>>>> f25491a19ad0785c074814e5829874bc725f7e40
 </head>
 <body class="color-animate">
 <!-- content -->
