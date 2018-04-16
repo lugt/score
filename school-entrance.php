@@ -14,12 +14,7 @@
 					<h3 class="title">教师入口</h3>
 					<div class="sign-in grid">
 						<div class="login-top">
-							<form action="teacher.php">
-								<input type="text" class="email" placeholder="手机号/职工卡号" required=""/>
-								<input type="password" class="password" placeholder="密码" required=""/>	
-								<input type="submit" value="登入"/>
-								<p>您不了解如何填写？ </p>
-							</form>2
+
 						</div>
 						<div class="sap_tabs">
 							<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">

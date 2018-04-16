@@ -25,7 +25,7 @@
 							</div>
 							<div class="btn-group center-bar" role="group" aria-label ="..." >
 							  	<button type="button" class="btn btn-default btn-pink-shadow" style="float:none;">教师学科反馈</button>
-							  	<button type="button" class="btn btn-default btn-pink-shadow" style="float:none;"s>近况</button>
+							  	<button type="button" class="btn btn-default btn-pink-shadow" style="float:none;">近况</button>
 
 							  	<div class="btn-group btn-pink-shadow" role="group" style="float:none;">
 								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -444,7 +444,7 @@
 				<button id="addData">Add Data</button>
 				<button id="removeData">Remove Data</button>
 				<script src="js/chart-util.js"></script>
-				<script src="js/Chart.min.js"></script>
+				<script src="js/Chart.bundle.min.js"></script>
 				<script>
 					var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 					var config = {
