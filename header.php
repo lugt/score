@@ -42,7 +42,7 @@ if($my_conf == NULL || $my_conf == -1 || !is_string($my_conf)){
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/modernizr.custom.63321.js"></script> 
 <script src="js/pretty-doughtnut.js"></script>
-<script src="js/Chart.min.js"></script>
+<script src="js/Chart.bundle.min.js"></script>
 <!--skycons-icons-->
 <script src="js/skycons.js"></script>
 <!--web-fonts-->
