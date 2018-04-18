@@ -142,3 +142,19 @@ function pack_params(params){
     }
     return paramString.substring(1);
 }
+
+
+KFuture = function(futureObj){
+    if(futureObj != null){
+
+    }
+    this.then = {
+
+    }
+}
+
+function getData(){
+    return new KFuture({func:function(future,params){
+        $.ajax(get_api_uri("data/list"));
+    }});
+}
