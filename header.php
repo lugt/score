@@ -45,6 +45,7 @@ if($my_conf == NULL || $my_conf == -1 || !is_string($my_conf)){
 <script src="js/Chart.bundle.min.js"></script>
 <!--skycons-icons-->
 <script src="js/skycons.js"></script>
+<script src="js/common/score-util.js"></script>
 <!--web-fonts-->
 <!--<link href='http://fonts.googleapis.com/css?family=Philosopher:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
