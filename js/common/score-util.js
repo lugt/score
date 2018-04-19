@@ -186,11 +186,17 @@ function KFuture(action,futureObj) {
             setTimeout(this.get, 10);
             return 1000;
         }
-        var ans = this.func(this, params);
+
+        var ans = {};
+        if(typeof(this.func) === "function"){
+            ans = this.func(this, params);
+            this.params.__result = ans;
+            this.result = ans;
+        }
         this.onGet = false;
-        this.params.__result = ans;
-        this.result = ans;
-        this.onComplete(ans,this);
+        if(typeof (this.onComplete) === "function"){
+            this.onComplete(ans,this);
+        }
         if(this.nextFuture != null){
             this.nextFuture.get(ans);
         }
